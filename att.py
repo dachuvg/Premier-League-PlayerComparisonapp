@@ -8,7 +8,9 @@ from selenium.webdriver.chrome.options import Options
 from scipy import stats
 import math
 import streamlit as st
+import chromedriver_autoinstaller
 
+chromedriver_autoinstaller.install()
 @st.cache_data 
 def get_att_data():
     import streamlit as st
