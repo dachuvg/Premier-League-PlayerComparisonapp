@@ -6,3 +6,4 @@ mplsoccer
 matplotlib
 scipy
 streamlit
+chromedriver-autoinstaller==0.4.0

@@ -10,7 +10,9 @@ from scipy import stats
 import math
 import streamlit as st
 
+import chromedriver_autoinstaller
 
+chromedriver_autoinstaller.install()
 @st.cache_data 
 def get_gk_data():
     # Scrape stats_keeper data
