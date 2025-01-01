@@ -1,6 +1,6 @@
 pandas
 numpy
-selenium
+selenium==4.4.0
 beautifulsoup4
 mplsoccer
 matplotlib

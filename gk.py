@@ -16,10 +16,11 @@ def get_gk_data():
     from selenium.webdriver.chrome.options import Options
     # Scrape stats_keeper data
     chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run browser in headless mode
+    chrome_options.add_argument("--headless")  # Run without opening a browser window
+    chrome_options.add_argument("--no-sandbox")  # For compatibility on some environments
+    chrome_options.add_argument("--disable-dev-shm-usage")  # To avoid resource issues
     chrome_options.add_argument("--disable-gpu")  # Disable GPU for headless
-    chrome_options.add_argument("--no-sandbox")  # For compatibility
-    chrome_options.add_argument("--disable-dev-shm-usage")  # To prevent resource issues
+    chrome_options.add_argument("--remote-debugging-port=9222")  # Optional: enables debugging
 
     driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/keepers/Premier-League-Stats")
@@ -27,10 +28,10 @@ def get_gk_data():
     soup = BeautifulSoup(html, 'html.parser')
     table = soup.find('table', {'id': 'stats_keeper'})
     df1 = pd.read_html(str(table))[0]
-    driver.quit()
+    # driver.quit()
 
     # Scrape stats_keeper_adv data
-    driver = webdriver.Chrome(options=chrome_options)
+    # driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/keepersadv/Premier-League-Stats")
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
