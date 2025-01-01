@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from mplsoccer import Radar, FontManager, grid, PyPizza,add_image
 import matplotlib.pyplot as plt
 from mplsoccer import Radar, FontManager, grid
-from selenium.webdriver.chrome.options import Options
+
 from scipy import stats
 import math
 import streamlit as st
@@ -17,6 +17,7 @@ def get_att_data():
     import pandas as pd
     import numpy as np
     from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
     from bs4 import BeautifulSoup
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Run browser in headless mode
@@ -96,6 +97,7 @@ def get_att_data():
     from selenium import webdriver
     from bs4 import BeautifulSoup
     import pandas as pd
+    from selenium.webdriver.chrome.options import Options
 
     # Set up Selenium
     driver = webdriver.Chrome(options=chrome_options)
@@ -138,6 +140,7 @@ def get_att_data():
     from selenium import webdriver
     from bs4 import BeautifulSoup
     import pandas as pd
+    from selenium.webdriver.chrome.options import Options
 
     # Set up Selenium
     driver = webdriver.Chrome(options=chrome_options)

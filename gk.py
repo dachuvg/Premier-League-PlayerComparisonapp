@@ -15,6 +15,8 @@ import chromedriver_autoinstaller
 chromedriver_autoinstaller.install()
 @st.cache_data 
 def get_gk_data():
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
     # Scrape stats_keeper data
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Run browser in headless mode
