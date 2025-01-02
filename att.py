@@ -8,18 +8,19 @@ from selenium.webdriver.chrome.service import Service
 from scipy import stats
 import math
 import streamlit as st
-
 from selenium.webdriver.chrome.options import Options
 
     
 @st.cache_data 
 def get_att_data():
+    from selenium.webdriver.chrome.options import Options
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Run browser in headless mode
     chrome_options.add_argument("--disable-gpu")  # Disable GPU for headless
     chrome_options.add_argument("--no-sandbox")  # For compatibility
     chrome_options.add_argument("--disable-dev-shm-usage")  # To prevent resource issues
     service=Service()
+    
     driver = webdriver.Chrome(service=service,options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/stats/Premier-League-Stats")
 
