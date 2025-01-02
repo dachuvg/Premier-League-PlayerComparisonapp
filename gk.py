@@ -9,6 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from scipy import stats
 import math
 import streamlit as st
+from selenium.webdriver.chrome.service import Service
 
 @st.cache_data 
 def get_gk_data():
@@ -16,13 +17,15 @@ def get_gk_data():
     from selenium.webdriver.chrome.options import Options
     # Scrape stats_keeper data
     chrome_options = Options()
+    
     chrome_options.add_argument("--headless")  # Run without opening a browser window
     chrome_options.add_argument("--no-sandbox")  # For compatibility on some environments
     chrome_options.add_argument("--disable-dev-shm-usage")  # To avoid resource issues
     chrome_options.add_argument("--disable-gpu")  # Disable GPU for headless
     chrome_options.add_argument("--remote-debugging-port=9222")  # Optional: enables debugging
+    service = Service()
 
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(service=service,options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/keepers/Premier-League-Stats")
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
