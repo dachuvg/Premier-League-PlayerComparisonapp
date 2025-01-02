@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from scipy import stats
 import math
 import streamlit as st
-
+from selenium.webdriver.chrome.service import Service
 
 @st.cache_data 
 def get_def_data():
@@ -18,7 +18,9 @@ def get_def_data():
     chrome_options.add_argument("--disable-gpu")  # Disable GPU for headless
     chrome_options.add_argument("--no-sandbox")  # For compatibility
     chrome_options.add_argument("--disable-dev-shm-usage")  # To prevent resource issues    
-    driver = webdriver.Chrome(options=chrome_options)
+    service = Service()
+
+    driver = webdriver.Chrome(service=service,options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/defense/Premier-League-Stats")
 
     # Get the page source
@@ -57,7 +59,7 @@ def get_def_data():
     def_df['Clearances'] = np.where(def_df['90s'] != 0, def_df['Blocks'] / def_df['90s'], 0)
     def_df['Errors'] = np.where(def_df['90s'] != 0, def_df['Err'] / def_df['90s'], 0)
     
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(service=service,options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/misc/Premier-League-Stats")
 
     # Get the page source

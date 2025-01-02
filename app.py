@@ -115,7 +115,7 @@ try:
 
 
     with col1:
-        st.image('logos/pl.png', use_column_width='auto') 
+        st.image('logos/pl.png', use_container_width='auto') 
     st.subheader('A comparison of Premier League players across various performance metrics')
 
     if 'placeholders_shown' not in st.session_state:
