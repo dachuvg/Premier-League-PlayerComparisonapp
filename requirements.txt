@@ -8,3 +8,4 @@ streamlit
 selenium
 webdriver-manager
 psutil
+lxml
