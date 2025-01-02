@@ -8,20 +8,25 @@ from selenium.webdriver.chrome.service import Service
 from scipy import stats
 import math
 import streamlit as st
+
 from selenium.webdriver.chrome.options import Options
 
     
 @st.cache_data 
 def get_att_data():
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
+    from bs4 import BeautifulSoup
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Run browser in headless mode
     chrome_options.add_argument("--disable-gpu")  # Disable GPU for headless
     chrome_options.add_argument("--no-sandbox")  # For compatibility
     chrome_options.add_argument("--disable-dev-shm-usage")  # To prevent resource issues
-    service=Service()
-    
-    driver = webdriver.Chrome(service=service,options=chrome_options)
+        
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/stats/Premier-League-Stats")
 
     # Get the page source
@@ -50,7 +55,7 @@ def get_att_data():
     att_df['Nation'] = att_df['Nation'].str.split().str[1]
     att_df['Age'] = att_df['Age'].str.split("-").str[0]
     
-    driver = webdriver.Chrome(service=service,options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/passing/Premier-League-Stats")
 
     # Get the page source
@@ -96,7 +101,7 @@ def get_att_data():
     from selenium.webdriver.chrome.options import Options
 
     # Set up Selenium
-    driver = webdriver.Chrome(service=service,options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/passing_types/Premier-League-Stats")
 
     # Get the page source
@@ -133,9 +138,13 @@ def get_att_data():
     
     stats_df = pd.merge(stats_df, type_df, on='Rk', how='inner')
     
+    from selenium import webdriver
+    from bs4 import BeautifulSoup
+    import pandas as pd
+    from selenium.webdriver.chrome.options import Options
 
     # Set up Selenium
-    driver = webdriver.Chrome(service=service,options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/gca/Premier-League-Stats")
 
     # Get the page source
@@ -169,7 +178,7 @@ def get_att_data():
     
     stats_df = pd.merge(stats_df, gca_df, on='Rk', how='inner')
     
-    driver = webdriver.Chrome(service=service,options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://fbref.com/en/comps/9/possession/Premier-League-Stats")
 
     # Get the page source
