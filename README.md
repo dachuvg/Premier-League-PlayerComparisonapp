@@ -23,11 +23,11 @@ Use the dropdowns in the app to select players and view comparisons.
 Visualizations will appear for the chosen players, including radar and pizza charts.
 
 ## Technologies Used
--Python: Core programming language.
--Selenium: For web scraping dynamic pages.
--BeautifulSoup: Parsing HTML data.
--Streamlit: Building an interactive UI.
--mplsoccer: Advanced visualizations for football stats.
+- Python: Core programming language.
+- Selenium: For web scraping dynamic pages.
+- BeautifulSoup: Parsing HTML data.
+- Streamlit: Building an interactive UI.
+- mplsoccer: Advanced visualizations for football stats.
 
 ## Future Enhancements
 -Add player profiles with career stats.
