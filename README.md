@@ -1,4 +1,4 @@
-# Premier Lesgue Player Comparison using Data Scraping,Visualization.
+# Premier League Player Comparison using Data Scraping,Visualization.
 
 This project is a comprehensive application for analyzing and visualizing football statistics. It uses **web scraping**, **data processing**, and **interactive visualizations** to provide insights into player performance, focusing on Premier League stats.
 
