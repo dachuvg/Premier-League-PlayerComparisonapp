@@ -13,7 +13,8 @@ This project is a comprehensive application for analyzing and visualizing footba
   - Users can select players to compare.
   - Data loading status is displayed dynamically.
   - Clean, responsive design ensures usability.
- 
+
+# Feel free to use the app at :[https://plplayercomparison24-25.streamlit.app/] 
 ## Usage
 - Run the Streamlit app:
 bash
@@ -30,7 +31,7 @@ streamlit run app.py
 - mplsoccer: Advanced visualizations for football stats.
 
 ## Future Enhancements
--Add player profiles with career stats.
--Include team-level comparisons and visualizations.
--Support for additional leagues and competitions.
+- Add player profiles with career stats.
+- Include team-level comparisons and visualizations.
+- Support for additional leagues and competitions.
 
