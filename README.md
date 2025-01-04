@@ -13,4 +13,24 @@ This project is a comprehensive application for analyzing and visualizing footba
   - Users can select players to compare.
   - Data loading status is displayed dynamically.
   - Clean, responsive design ensures usability.
+ 
+Usage
+Run the Streamlit app:
+bash
+Copy code
+streamlit run app.py
+Use the dropdowns in the app to select players and view comparisons.
+Visualizations will appear for the chosen players, including radar and pizza charts.
+
+## Technologies Used
+-Python: Core programming language.
+-Selenium: For web scraping dynamic pages.
+-BeautifulSoup: Parsing HTML data.
+-Streamlit: Building an interactive UI.
+-mplsoccer: Advanced visualizations for football stats.
+
+## Future Enhancements
+-Add player profiles with career stats.
+-Include team-level comparisons and visualizations.
+-Support for additional leagues and competitions.
 
