@@ -14,7 +14,7 @@ This project is a comprehensive application for analyzing and visualizing footba
   - Data loading status is displayed dynamically.
   - Clean, responsive design ensures usability.
 
-# Feel free to use the app at :[https://plplayercomparison24-25.streamlit.app/] 
+**Feel free to use the app at :[https://plplayercomparison24-25.streamlit.app/]**
 ## Usage
 - Run the Streamlit app:
 bash
