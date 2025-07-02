@@ -188,7 +188,7 @@ def gkcompare(df,player1,player2):
 def gkpizza(df,player1,player2):
     
     params = ['CS%','Save%','PKSave%','PKsv','GA90','OPA/90']
-    df.fillna(0.0)
+    df.fillna(0.0,inplace = True)
  
     values2= []
     values1 = []
