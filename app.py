@@ -57,13 +57,13 @@ elif s1 == 'Defending':
             st.write(f"Age: {def_df.loc[def_df['Player'] == player1, 'Age'].values[0]}")
             st.write(f"Club: {def_df.loc[def_df['Player'] == player1, 'Squad'].values[0]}")
             st.write(f"Nationality: {def_df.loc[def_df['Player'] == player1, 'Nation'].values[0]}")
-            st.write(f"90s: {def_df.loc[def_df['Player'] == player1, '90s'].values[0]}")
+            st.write(f"Minutes Played: {gk_df.loc[gk_df['Player'] == player1, '90s'].values[0]*90}")
     with col2:    
             player2=st.selectbox("Pick a player",options=def_df['Player'].values,key="player2")
             st.write(f"Age: {def_df.loc[def_df['Player'] == player2, 'Age'].values[0]}")
             st.write(f"Club: {def_df.loc[def_df['Player'] == player2, 'Squad'].values[0]}")
             st.write(f"Nationality: {def_df.loc[def_df['Player'] == player2, 'Nation'].values[0]}")
-            st.write(f"90s: {def_df.loc[def_df['Player'] == player2, '90s'].values[0]}")
+            st.write(f"Minutes Played: {gk_df.loc[gk_df['Player'] == player1, '90s'].values[0]*90}")
             
         
     fig = defcompare(def_df, player1, player2)
@@ -80,14 +80,14 @@ else:
             st.write(f"Age: {att_df.loc[att_df['Player'] == player1, 'Age'].values[0]}")
             st.write(f"Club: {att_df.loc[att_df['Player'] == player1, 'Squad'].values[0]}")
             st.write(f"Nationality: {att_df.loc[att_df['Player'] == player1, 'Nation'].values[0]}")
-            st.write(f"90s: {att_df.loc[att_df['Player'] == player1, '90s'].values[0]}")
+            st.write(f"Minutes Played: {gk_df.loc[gk_df['Player'] == player1, '90s'].values[0]*90}")
 
     with col2:
             player2 = st.selectbox("Pick a player", options=att_df['Player'].values,key="player2")
             st.write(f"Age: {att_df.loc[att_df['Player'] == player2, 'Age'].values[0]}")
             st.write(f"Club: {att_df.loc[att_df['Player'] == player2, 'Squad'].values[0]}")
             st.write(f"Nationality: {att_df.loc[att_df['Player'] == player2, 'Nation'].values[0]}")
-            st.write(f"90s: {att_df.loc[att_df['Player'] == player2, '90s'].values[0]}")
+            st.write(f"Minutes Played: {gk_df.loc[gk_df['Player'] == player1, '90s'].values[0]*90}")
             
     fig= attcompare(att_df,player1,player2)
     st.pyplot(fig)
