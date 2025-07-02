@@ -164,11 +164,6 @@ def gkcompare(df,player1,player2):
     axs['radar'].scatter(vertices2[:, 0], vertices2[:, 1],
                          c='#d80499', edgecolors='#6d6c6d', marker='o', s=150, zorder=2)
 
-    
-
-    
-    # adding the endnote and title text (these axes range from 0-1, i.e. 0, 0 is the bottom left)
-    # Note we are slightly offsetting the text from the edges by 0.01 (1%, e.g. 0.99)
     endnote_text = axs['endnote'].text(0.99, 0.5, 'Reference: MPL Soccer/Statsbomb', fontsize=15,
                                        color='#fcfcfc',fontproperties=robotto_thin.prop, ha='right', va='center')
     endnote2_text = axs['endnote'].text(0.5, 0.5, '**OPA - Defensive actions outside penalty area(FBref)', fontsize=20,
@@ -193,6 +188,7 @@ def gkcompare(df,player1,player2):
 def gkpizza(df,player1,player2):
     
     params = ['CS%','Save%','PKSave%','PKsv','GA90','OPA/90']
+    df.fillna(0.0)
  
     values2= []
     values1 = []
