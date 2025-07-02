@@ -33,13 +33,13 @@ elif s1=='Goalkeeping':
         st.write(f"Age: {gk_df.loc[gk_df['Player'] == player1, 'Age'].values[0]}")
         st.write(f"Club: {gk_df.loc[gk_df['Player'] == player1, 'Squad'].values[0]}")
         st.write(f"Nationality: {gk_df.loc[gk_df['Player'] == player1, 'Nation'].values[0]}")
-        st.write(f"90s: {gk_df.loc[gk_df['Player'] == player1, '90s'].values[0]}")
+        st.write(f"Minutes Played: {gk_df.loc[gk_df['Player'] == player1, '90s'].values[0]*90}")
     with col2:    
         player2=st.selectbox("Pick another player",options=gk_df['Player'].values)
         st.write(f"Age: {gk_df.loc[gk_df['Player'] == player2, 'Age'].values[0]}")
         st.write(f"Club: {gk_df.loc[gk_df['Player'] == player2, 'Squad'].values[0]}")
         st.write(f"Nationality: {gk_df.loc[gk_df['Player'] == player2, 'Nation'].values[0]}")
-        st.write(f"90s: {gk_df.loc[gk_df['Player'] == player2, '90s'].values[0]}")
+        st.write(f"Minutes Played: {gk_df.loc[gk_df['Player'] == player2, '90s'].values[0]*90}")
             
         
     fig = gkcompare(gk_df, player1, player2)
