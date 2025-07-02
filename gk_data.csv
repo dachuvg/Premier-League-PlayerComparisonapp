@@ -1,0 +1,45 @@
+,Rk,Player,Nation,Pos,Squad,Age,90s,GA,GA90,SoTA,Saves,CS%,PKatt,PKsv,OPA/90,Save%,PKSave%
+0,1,Alisson,BRA,GK,Liverpool,31,27.9,29,1.04,100,73,32.1,1,0,1.76,71.0,0.0
+1,2,Alphonse Areola,FRA,GK,West Ham,31,25.1,41,1.63,115,77,20.0,0,0,1.19,64.35,0.0
+2,3,Kepa Arrizabalaga,ESP,GK,Bournemouth,29,31.0,39,1.26,134,95,25.8,4,0,1.74,70.9,0.0
+3,4,Brandon Austin,ENG,GK,Tottenham,25,1.0,2,2.0,4,2,0.0,0,0,2.0,50.0,0.0
+4,5,Altay Bayındır,TUR,GK,Manchester Utd,26,4.0,10,2.5,17,8,25.0,0,0,1.75,41.18,0.0
+5,6,Daniel Bentley,ENG,GK,Wolves,31,2.0,4,2.0,12,8,50.0,0,0,1.5,66.67,0.0
+6,7,Martin Dúbravka,SVK,GK,Newcastle Utd,35,10.0,12,1.2,41,29,50.0,0,0,1.1,70.73,0.0
+7,8,Ederson,BRA,GK,Manchester City,30,25.8,26,1.01,78,53,38.5,2,0,1.9,66.67,0.0
+8,9,Łukasz Fabiański,POL,GK,West Ham,39,12.9,21,1.63,71,50,15.4,3,0,0.93,70.42,0.0
+9,10,Mark Flekken,NED,GK,Brentford,31,36.4,55,1.51,203,150,18.9,1,0,0.93,72.91,0.0
+10,11,Fraser Forster,ENG,GK,Tottenham,36,7.0,15,2.14,42,27,14.3,2,0,0.43,64.29,0.0
+11,12,Dean Henderson,ENG,GK,Crystal Palace,27,38.0,51,1.34,150,101,28.9,2,1,1.05,66.0,50.0
+12,13,Mads Hermansen,DEN,GK,Leicester City,24,26.5,58,2.19,155,99,3.7,4,1,0.98,62.58,25.0
+13,14,Vitezslav Jaros,CZE,GK,Liverpool,23,0.1,0,0.0,1,1,0.0,0,0,0.0,100.0,0.0
+14,15,Sam Johnstone,ENG,GK,Wolves,31,7.0,17,2.43,39,23,0.0,2,0,1.57,56.41,0.0
+15,16,Filip Jørgensen,DEN,GK,Chelsea,22,6.0,9,1.5,28,19,16.7,1,0,0.33,67.86,0.0
+16,17,Caoimhín Kelleher,IRL,GK,Liverpool,25,10.0,12,1.2,37,24,40.0,1,1,0.9,67.57,100.0
+17,18,Tom King,WAL,GK,Wolves,29,0.0,0,0.0,0,0,0.0,0,0,0.0,,0.0
+18,19,Antonín Kinský,CZE,GK,Tottenham,21,6.0,11,1.83,32,23,16.7,0,0,1.5,65.62,0.0
+19,20,Bernd Leno,GER,GK,Fulham,32,38.0,54,1.42,159,106,13.2,4,1,0.87,66.04,25.0
+20,21,Joe Lumley,ENG,GK,Southampton,29,3.0,7,2.33,20,13,0.0,0,0,2.33,65.0,0.0
+21,22,Emiliano Martínez,ARG,GK,Aston Villa,31,35.5,45,1.27,142,96,21.6,2,1,0.99,68.31,50.0
+22,23,Alex McCarthy,ENG,GK,Southampton,34,5.0,13,2.6,37,24,0.0,2,0,0.0,64.86,0.0
+23,24,Arijanet Muric,KVX,GK,Ipswich Town,25,18.0,33,1.83,100,67,5.6,3,0,1.11,67.0,0.0
+24,25,Neto,BRA,GK,Bournemouth,35,2.0,2,1.0,13,11,0.0,0,0,1.5,84.62,0.0
+26,26,Robin Olsen,SWE,GK,Aston Villa,34,2.5,6,2.39,14,8,100.0,1,0,0.0,57.14,0.0
+27,27,André Onana,CMR,GK,Manchester Utd,28,34.0,44,1.29,132,88,26.5,4,1,0.68,66.67,25.0
+28,28,Stefan Ortega,GER,GK,Manchester City,31,12.2,18,1.47,50,33,25.0,2,0,0.98,64.0,0.0
+29,29,Alex Palmer,ENG,GK,Ipswich Town,27,13.0,30,2.31,71,43,0.0,1,0,1.0,57.75,0.0
+30,30,Jordan Pickford,ENG,GK,Everton,30,38.0,44,1.16,163,117,31.6,2,2,1.5,73.01,100.0
+31,31,Nick Pope,ENG,GK,Newcastle Utd,32,28.0,35,1.25,120,86,28.6,2,1,2.29,70.83,50.0
+32,32,Hákon Rafn Valdimarsson,ISL,GK,Brentford,22,1.6,2,1.24,4,3,100.0,0,0,0.0,50.0,0.0
+33,33,Aaron Ramsdale,ENG,GK,Southampton,26,30.0,66,2.2,188,120,10.0,7,2,0.67,64.89,28.57
+34,34,David Raya,ESP,GK,Arsenal,28,38.0,34,0.89,120,86,34.2,3,0,1.74,71.67,0.0
+35,35,José Sá,POR,GK,Wolves,31,29.0,48,1.66,117,69,24.1,7,2,1.48,58.97,28.57
+36,36,Robert Sánchez,ESP,GK,Chelsea,26,32.0,34,1.06,127,92,31.3,5,1,1.78,73.23,20.0
+37,37,Matz Sels,BEL,GK,Nott'ham Forest,32,38.0,46,1.21,165,119,34.2,3,0,0.32,72.12,0.0
+38,38,Jason Steele,ENG,GK,Brighton,33,2.0,1,0.5,4,3,50.0,0,0,1.5,75.0,0.0
+39,39,Jakub Stolarczyk,POL,GK,Leicester City,23,10.0,16,1.6,44,28,20.0,0,0,0.8,63.64,0.0
+40,40,Mark Travers,IRL,GK,Bournemouth,25,5.0,5,1.0,25,20,20.0,0,0,1.0,80.0,0.0
+41,41,Bart Verbruggen,NED,GK,Brighton,21,36.0,58,1.61,143,87,19.4,9,0,1.31,59.44,0.0
+42,42,Guglielmo Vicario,ITA,GK,Tottenham,27,24.0,37,1.54,102,67,16.7,1,0,1.29,63.73,0.0
+43,43,Christian Walton,ENG,GK,Ipswich Town,28,7.0,19,2.71,39,20,14.3,2,0,0.29,51.28,0.0
+44,44,Danny Ward,WAL,GK,Leicester City,31,1.5,6,4.0,10,4,0.0,0,0,1.33,40.0,0.0
